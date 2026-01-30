@@ -17,7 +17,7 @@ public abstract class Person {
     private String surname;
     private Integer phoneNumber;
 
-    @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "owner", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<Vehicle> vehicles = new ArrayList<>();
 
     public Person() {}
