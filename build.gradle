@@ -4,6 +4,8 @@ plugins {
 	id 'eclipse'
 }
 
+mainClassName = 'es.ilerna.M0486.ra3.pt22.pt3.anotacions.jpa.main.Main'
+
 repositories {
 	gradlePluginPortal()
 	mavenCentral()
