@@ -1,7 +1,8 @@
-package es.ilerna.M0486.ra3.pt22.pt3.anotacions.jpa.main.Clases;
-import javax.persistence.Entity;
+package es.ilerna.M0486.ra3.pt22.pt3.anotacions;
+import javax.persistence.*;
 
 @Entity
+@DiscriminatorValue("Student")
 public class Student extends Person {
 
     private String studentCode;

@@ -1,11 +1,13 @@
-package es.ilerna.M0486.ra3.pt22.pt3.anotacions.jpa.main.Clases;
+package es.ilerna.M0486.ra3.pt22.pt3.anotacions;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-public class Person {
+@Table(name = "person")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "person_type", discriminatorType = DiscriminatorType.STRING)
+public abstract class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

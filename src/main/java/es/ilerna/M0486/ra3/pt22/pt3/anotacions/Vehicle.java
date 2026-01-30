@@ -1,9 +1,11 @@
-package es.ilerna.M0486.ra3.pt22.pt3.anotacions.jpa.main.Clases;
+package es.ilerna.M0486.ra3.pt22.pt3.anotacions;
 import javax.persistence.*;
 
 
+@Entity
+@Table(name = "vehicle")
 @Inheritance(strategy = InheritanceType.JOINED)
-public class Vehicle {
+public abstract class Vehicle {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
