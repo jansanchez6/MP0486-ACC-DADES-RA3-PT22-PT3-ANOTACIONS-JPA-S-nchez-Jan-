@@ -8,7 +8,7 @@
 		
 		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 		<property name="hibernate.connection.url">
-			jdbc:mysql://localhost:3306/ddbb_name?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;createDatabaseIfNotExist=true
+			jdbc:mysql://localhost:3306/bd_anotacions?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;createDatabaseIfNotExist=true
 		</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">Js275867</property>
